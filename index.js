@@ -6,7 +6,7 @@ require('./models/Search')
 const keys = require('./config/keys')
 
 mongoose.Promise = global.Promise
-mongoose.connect(keys.MONGO_URI)
+mongoose.connect(keys.MONGODB_URI)
 
 app.use(bodyParser.json())
 app.use(express.static(`${__dirname}/public`))

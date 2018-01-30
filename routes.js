@@ -4,7 +4,6 @@ const mongoose = require('mongoose')
 const Search = mongoose.model('search')
 
 module.exports = (app) => {
-  app.get('/', (req, res) => res.send('Hello world'))
 
   app.get('/api/search/:term', async (req, res) => {
     const { term } = req.params
