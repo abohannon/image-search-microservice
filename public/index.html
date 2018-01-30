@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Image Search Abstraction Layer Microservice</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="content">
+
+        <h1 class="header">Image Search Abstraction Layer Microservice</h1>
+        <code class="code">/api/search/:term</a></code>
+        <h2 class="subheader">Example usage:</h2>
+        <code class="code"><a href="/api/search/dogs">/api/search/dogs</a></code>
+        <code class="code"><a href="/api/search/dogs?offset=2">/api/search/dogs?offset=2</a></code>
+        <code class="code"><a href="/api/search/recent">/api/search/recent</a></code>
+        <h2 class="subheader">Example output:</h2>
+        <p>Search for "dogs"</p>
+        <code class="code">
+          {<br />
+          title: "dogs - ThingLink",<br />
+          image url: "http://s1.thingpic.com/images/Fo/9WTxTGA9G7JqNCm2P2Ub541p.jpeg",<br />
+          context: "https://www.thinglink.com/scene/974329125546229763"<br />
+          },<br />
+          {<br />
+          title: "My Dogs HD Wallpaper Cute Dog Puppy New Tab - Chrome Web Store",<br />
+          image url: "https://lh3.googleusercontent.com/-AH05wC-7vDiZubm6irl_oAv9u7of2jcChkP_t4Hr-nINLpfCFAk57KSfshnNAJJkl49wQLYGw=w640-h400-e365",<br />
+          context: "https://chrome.google.com/webstore/detail/my-dogs-hd-wallpaper-cute/bhmpnibiagopmobamhlgaghkojlcjnfn"<br />
+          },<br />
+          {<br />
+          title: "Dog | National Geographic",<br />
+          image url: "https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/d/domestic-dog_thumb.jpg",<br />
+          context: "https://www.nationalgeographic.com/animals/mammals/d/domestic-dog/"<br />
+          },
+        </code>
+        <p>Recent search queries</p>
+        <code class="code">
+          {<br />
+          title: "dogs - ThingLink",<br />
+          image url: "http://s1.thingpic.com/images/Fo/9WTxTGA9G7JqNCm2P2Ub541p.jpeg",<br />
+          context: "https://www.thinglink.com/scene/974329125546229763"<br />
+          },<br />
+          {<br />
+          title: "My Dogs HD Wallpaper Cute Dog Puppy New Tab - Chrome Web Store",<br />
+          image url: "https://lh3.googleusercontent.com/-AH05wC-7vDiZubm6irl_oAv9u7of2jcChkP_t4Hr-nINLpfCFAk57KSfshnNAJJkl49wQLYGw=w640-h400-e365",<br />
+          context: "https://chrome.google.com/webstore/detail/my-dogs-hd-wallpaper-cute/bhmpnibiagopmobamhlgaghkojlcjnfn"<br />
+          },<br />
+          {<br />
+          title: "Dog | National Geographic",<br />
+          image url: "https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/d/domestic-dog_thumb.jpg",<br />
+          context: "https://www.nationalgeographic.com/animals/mammals/d/domestic-dog/"<br />
+          },
+        </code>
+      </section>
+    </main>
+  </body>
+
+</html>
