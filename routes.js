@@ -39,18 +39,20 @@ module.exports = (app) => {
   })
 
   app.get('/api/recent', (req, res) => {
+    try {
+      Search.find({}, (err, searches) => {
+        const recentSearches = searches.reduce((searches, search, i) => {
+          searches[i] = {
+            query: search.query,
+            date: search.date
+          }
+          return searches
+        }, [])
 
-    Search.find({}, (err, searches) => {
-      const recentSearches = searches.reduce((searches, search, i) => {
-        searches[i] = {
-          query: search.query,
-          date: search.date
-        }
-        return searches
-      }, [])
-
-      res.send(recentSearches.reverse())
-    })
+        res.send(recentSearches.reverse())
+      })
+    } catch (err) {
+      console.log('Error fetching recent searches', err)
+    }
   })
-
 }
